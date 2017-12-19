@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Infra\EventStore\EventHandler.cs" />
+    <Compile Remove="Infra\EventStore\EventModel.cs" />
+    <Compile Remove="Infra\EventStore\EventStore.cs" />
+    <Compile Remove="Infra\EventStore\EventStream.cs" />
+    <Compile Remove="Infra\EventStore\GetEventStream.cs" />
+    <Compile Remove="Infra\EventStore\WriteEvent.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Infra\EventStore\EventStore.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventStore.Client" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
