@@ -1,17 +1,20 @@
- </br# CQRS-With-Custom-EventStore
-An effort to build a working CQRS w/ event store onboard that stores DB as JSON
-
-This is a template for a CQRS Patterned API.  To use, simply add event, command models, build out the domain, fill out controllers and readmodels 
-and you'll have a fully operation API All of the boiler plate infastracture stuff is taken care of, as long as you are able to deploy to a server
-which can host a JSON File. <br/>
-NOTE, there are stll some TODO's not finished.</br>
-NOTE, version using Event Store to come </br?
-
+> </br># CQRS-With-Custom-EventStore </br>
+An effort to build a working CQRS w/ event store onboard that stores DB as JSON</br>
+</br>
+This is a template for a CQRS Patterned API. </br>
+</br>
+Steps:</br>
+</br>
+1) If you don't already have it, download and install Event Store @ https://eventstore.org/downloads/ and run it.</br>
+</br>
+2) Recommended, but not required.  A SQL management studio.</br>
+</br>
+3) change connection string where required to match available SQL servers (Event Store should already have all the necessary details)</br>
+</br>
+4) Look in the "src" folder to find example commands, events, controllers, and domain.  Replace these with necessary files and business logic.</br>
+</br>
+</br>
+</br>
 TODO <br/>
-  //Force Synchronous writes to EVENTSTORE.Json <br/>
-  //set up automation of EVENTSTORE.Json to adjust to different server environments and to build it from scratch if it's not there <br/>
-  //Test Deployment on multiple Server environments. <br/>
-  
- Done <br/>
-  //Synchronous Application of events from EVENTSTORE.json on start is now forced, events hit the readmodels in the right order. <br/>
-  //Readmodels are now automatically registered on startup. <br/>
+Plan solutions for event streams are GUID based, or combine an ID within the Starting Event with the EventType or ...</br>
+Resolve need for key planning in SQL etc...</br>
