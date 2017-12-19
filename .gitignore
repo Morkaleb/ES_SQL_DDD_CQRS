@@ -2,8 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/ES-SQL-ManagerSchedule/v15/Server/sqlite3/db.lock
-/ .vs/ES-SQL-ManagerSchedule/v15/.suo
 /.vs
-/.vs/ES-SQL-ManagerSchedule/v15/Server/sqlite3/storage.ide-shm
-/ES-SQL-ManagerSchedule/bin
+/.bin
