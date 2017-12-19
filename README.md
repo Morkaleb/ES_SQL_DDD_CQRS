@@ -1,5 +1,5 @@
-> </br># CQRS-With-Custom-EventStore </br>
-An effort to build a working CQRS w/ event store onboard that stores DB as JSON</br>
+> </br># ES_SQL_DDD_CQRS </br>
+An effort to build a working CQRS w/ Event Store Connections and SQL database for consumable Data</br>
 </br>
 This is a template for a CQRS Patterned API. </br>
 </br>
